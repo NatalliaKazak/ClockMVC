@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Clocks</title>
+      <script src="script.js"></script>
+      <link href="css.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class='CNVSCont' >
+      <div id='clockCNVS1' class='clockSVG'>
+        <input type='button' class='btnStop' value='Стоп'>
+       	<input type='button' class='btnStart' value='Старт'>
+    		<div id='score' class='info'></div>
+    		<div class="clockCont" style='width:450px; height:450px;'>
+          <canvas id='clock'  width='500' height='500' style='position:absolute;' ></canvas>
+        	<canvas id='arrows' width='500' height='500' style='position:absolute;'>
+      	  </canvas>
+      	</div>
+	   </div>
+	   <div id='clockCNVS2' class='clockSVG'>
+        <input type='button' class='btnStop' value='Стоп'>
+       	<input type='button' class='btnStart' value='Старт'>
+    		<div id='score' class='info'></div>
+    		<div class="clockCont" style='width:500px; height:500px;'>
+      	<canvas id='clock' width='500' height='500' style='position:absolute;' ></canvas>
+      	<canvas id='arrows' width='500' height='500' style='position:absolute;'>
+      	</canvas>
+      	</div>
+	    </div>
+	   </div>
+    <div class='SVGCont' >
+      <div id='clockSVG1' class='clockSVG'>
+        <input type='button' class='btnStop' value='Стоп'>
+       	<input type='button' class='btnStart' value='Старт'>
+    		<div id='score' class='info'></div>
+        <svg id='clock' >
+    	    <circle id="circle-gold" r=210 cx=220 cy=220 fill=gold />
+    	    <circle id="circle-black" r=10 cx=220 cy=220 fill=black />
+    	    <text id="time" x="210" y="150" fill="black" text-anchor="middle" style="font-size: 35px" />
+  	    </svg>
+	    </div>
+	    <div id='clockSVG2' class='clockSVG'>
+        <input type='button' class='btnStop' value='Стоп'>
+       	<input type='button' class='btnStart' value='Старт'>
+    		<div id='score' class='info'></div>
+        <svg id='clock' width="500" height="500">
+    	    <circle id="circle-gold" r=210 cx=220 cy=220 fill=gold />
+    	    <circle id="circle-black" r=10 cx=220 cy=220 fill=black />
+    	    <text id="time" x="210" y="150" fill="black" text-anchor="middle" style="font-size: 35px"/>
+  	   </svg>
+	    </div>
+	   </div>
+	   <div class='DOMCont'>
+    	<div id='clockDOM1' class='clockDOM'>
+    	  <input type='button' class='btnStop' value='Стоп'>
+       	<input type='button' class='btnStart' value='Старт'>
+    		<div id='score' class='info'></div>
+    		 <div class="clock">
+    		   <div id='time' class='timeinfo'></div>
+      		  <div class="bcontainer" >
+      		    <div class="rounds-black"></div>
+      		  </div>
+      		     <div class="ncontainer">
+      		    <div class="numbers"></div>
+      		  </div>
+      	</div>
+	    </div>
+	    <div id='clockDOM2' class='clockDOM'>
+        <input type='button' class='btnStop' value='Стоп'>
+       	<input type='button' class='btnStart' value='Старт'>
+    		<div id='score' class='info'></div>
+        	<div class="clock">
+        	  <div id='time' class='timeinfo'></div>
+      		  <div class="bcontainer" >
+      		    <div class="rounds-black"></div>
+      		  </div>
+      		     <div class="ncontainer">
+      		    <div class="numbers"></div>
+      		  </div>
+      	</div>
+	    </div>
+	   </div>
+	<script src="script.js"></script>
+  </body>
+</html>

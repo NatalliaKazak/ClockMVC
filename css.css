@@ -1,0 +1,103 @@
+.SVGCont, .CNVSCont, .DOMCont {
+  width:440px; 
+  height:1000px; 
+  float: left;
+}
+.clock {
+  height: 420px;
+  width: 420px;
+  border-radius: 50%;
+  background-color: gold;
+  position: relative;
+  margin: 20px 0px 20px 10px;
+}
+.bcontainer {
+  position: absolute;
+  background-color: black;
+  height: 20px;
+  width: 20px;
+  margin-left: -10px;
+  margin-top: -10px;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+}
+.gcontainer {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  margin-left: 185px;
+  margin-top: 185px;
+}
+.rounds-green {
+  background-color: green;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.clock.simple:after {
+  background: #000;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 5%;
+  height: 5%;
+  z-index: 10;
+}
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+span {
+position: relative;
+font-size: 1.8em;
+	top: 16%;
+	left: 33%;
+}
+.num11, .num12, .num10 {
+	top: 16%;
+	left: 20%;
+}
+input[type="button"] {
+  display: inline; 
+  width: 100px;
+  height: 30px;
+}
+.info{
+  display: inline; 
+  width: 150px;
+  height: 30px;
+}
+.timeinfo{
+  position: absolute;
+  width: 150px;
+  height: 65px;
+  font-size: 35px;
+  margin-top: 120px;
+  margin-left: 150px;
+}
+
+#hour {
+  left: 207.5px;
+  transform-origin: 50% 79%;
+}
+#min{
+  left: 208px;
+  transform-origin: 50% 82%;
+}
+#sec {
+  left: 208.5px;
+  transform-origin: 50% 86%;
+}
+
+
+
+
+
+
+
